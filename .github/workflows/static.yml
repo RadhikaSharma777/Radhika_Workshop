@@ -8,18 +8,18 @@ on:
       - main
 
 jobs:
-      run_python_script:
+     run_python_script:
       name: Run hello.py
       runs-on: ubuntu-latest
       
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+      steps:
+        - name: Checkout repository
+          uses: actions/checkout@v2
         
-      - name: Set up Python
-        uses: actions/setup-pages@v2
-        with:
-          python-version: '3.12' 
+        - name: Set up Python
+          uses: actions/setup-pages@v2
+          with:
+            python-version: '3.12' 
           
-      - name: Run pcode.py
-        run: python pcode.py
+        - name: Run pcode.py
+          run: python pcode.py
