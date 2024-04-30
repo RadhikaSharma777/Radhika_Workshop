@@ -20,5 +20,5 @@ jobs:
         with:
           python-version: '3.12' 
           
-      - name: Run justtestingcode.py
-        run: python justtestingcode.py
+      - name: Run pcode.py
+        run: python pcode.py
